@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDom from "react-dom";
 
+var d = new Date();
+var n = d.getFullYear();
+
+const name = "Jimbo";
 ReactDom.render(
   <div>
     <h1>Here</h1>
@@ -13,9 +17,9 @@ ReactDom.render(
       Some species live in houses where they hunt insects attracted by
       artificial light.
     </p>
-    <p>Jimbo</p>
+    <p>{name}</p>
 
-    <p>Copyright 2021</p>
+    <p>Copyright {n}</p>
   </div>,
   document.getElementById("root")
 );
