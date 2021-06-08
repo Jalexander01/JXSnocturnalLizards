@@ -4,6 +4,10 @@ import ReactDom from "react-dom";
 var d = new Date();
 var n = d.getFullYear();
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 const name = "Jimbo";
 ReactDom.render(
   <div>
@@ -19,7 +23,9 @@ ReactDom.render(
     </p>
     <p>{name}</p>
 
-    <p>Copyright {n}</p>
+    <p>
+      Copyright {n} {getRandomInt(5)}
+    </p>
   </div>,
   document.getElementById("root")
 );
